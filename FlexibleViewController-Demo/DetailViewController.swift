@@ -12,4 +12,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func closeButtonClicked(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
