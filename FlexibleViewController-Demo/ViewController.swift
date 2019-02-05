@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
+    let interactor = Interactor()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +26,9 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail")
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
+        vc.transitioningDelegate = self
+        vc.interactor = interactor
         self.present(vc, animated: true, completion: nil)
     }
 }
@@ -38,5 +43,15 @@ extension ViewController: UITableViewDataSource {
         cell?.backgroundColor = UIColor.orange
         
         return cell!
+    }
+}
+
+extension ViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissAnimator()
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactor.hasStarted ? interactor : nil
     }
 }

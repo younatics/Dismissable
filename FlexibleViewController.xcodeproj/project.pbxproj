@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19FAB01C22071BCF00F8BE03 /* FlexibleViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FAB01222071BCE00F8BE03 /* FlexibleViewController.framework */; };
-		19FAB02122071BCF00F8BE03 /* FlexibleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB02022071BCF00F8BE03 /* FlexibleViewControllerTests.swift */; };
 		19FAB02322071BCF00F8BE03 /* FlexibleViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FAB01522071BCE00F8BE03 /* FlexibleViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19FAB03322071C3600F8BE03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB03222071C3600F8BE03 /* AppDelegate.swift */; };
 		19FAB03522071C3600F8BE03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB03422071C3600F8BE03 /* ViewController.swift */; };
@@ -17,25 +15,14 @@
 		19FAB03D22071C3800F8BE03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FAB03B22071C3800F8BE03 /* LaunchScreen.storyboard */; };
 		19FAB04322071E6000F8BE03 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB04222071E6000F8BE03 /* DetailViewController.swift */; };
 		19FAB0452207207300F8BE03 /* FlexibleAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB0442207207300F8BE03 /* FlexibleAnimationController.swift */; };
+		19FAB0472209478700F8BE03 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB0462209478700F8BE03 /* Interactor.swift */; };
+		19FAB0492209479E00F8BE03 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB0482209479E00F8BE03 /* DismissAnimator.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		19FAB01D22071BCF00F8BE03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 19FAB00922071BCE00F8BE03 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 19FAB01122071BCE00F8BE03;
-			remoteInfo = FlexibleViewController;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		19FAB01222071BCE00F8BE03 /* FlexibleViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlexibleViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FAB01522071BCE00F8BE03 /* FlexibleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlexibleViewController.h; sourceTree = "<group>"; };
 		19FAB01622071BCE00F8BE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19FAB01B22071BCF00F8BE03 /* FlexibleViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexibleViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		19FAB02022071BCF00F8BE03 /* FlexibleViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleViewControllerTests.swift; sourceTree = "<group>"; };
-		19FAB02222071BCF00F8BE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19FAB03022071C3600F8BE03 /* FlexibleViewController-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlexibleViewController-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FAB03222071C3600F8BE03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19FAB03422071C3600F8BE03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +32,8 @@
 		19FAB03E22071C3800F8BE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19FAB04222071E6000F8BE03 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		19FAB0442207207300F8BE03 /* FlexibleAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleAnimationController.swift; sourceTree = "<group>"; };
+		19FAB0462209478700F8BE03 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		19FAB0482209479E00F8BE03 /* DismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,14 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19FAB01822071BCF00F8BE03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19FAB01C22071BCF00F8BE03 /* FlexibleViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				19FAB01422071BCE00F8BE03 /* FlexibleViewController */,
-				19FAB01F22071BCF00F8BE03 /* FlexibleViewControllerTests */,
 				19FAB03122071C3600F8BE03 /* FlexibleViewController-Demo */,
 				19FAB01322071BCE00F8BE03 /* Products */,
 			);
@@ -87,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				19FAB01222071BCE00F8BE03 /* FlexibleViewController.framework */,
-				19FAB01B22071BCF00F8BE03 /* FlexibleViewControllerTests.xctest */,
 				19FAB03022071C3600F8BE03 /* FlexibleViewController-Demo.app */,
 			);
 			name = Products;
@@ -102,19 +81,12 @@
 			path = FlexibleViewController;
 			sourceTree = "<group>";
 		};
-		19FAB01F22071BCF00F8BE03 /* FlexibleViewControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				19FAB02022071BCF00F8BE03 /* FlexibleViewControllerTests.swift */,
-				19FAB02222071BCF00F8BE03 /* Info.plist */,
-			);
-			path = FlexibleViewControllerTests;
-			sourceTree = "<group>";
-		};
 		19FAB03122071C3600F8BE03 /* FlexibleViewController-Demo */ = {
 			isa = PBXGroup;
 			children = (
 				19FAB0442207207300F8BE03 /* FlexibleAnimationController.swift */,
+				19FAB0462209478700F8BE03 /* Interactor.swift */,
+				19FAB0482209479E00F8BE03 /* DismissAnimator.swift */,
 				19FAB03222071C3600F8BE03 /* AppDelegate.swift */,
 				19FAB03422071C3600F8BE03 /* ViewController.swift */,
 				19FAB04222071E6000F8BE03 /* DetailViewController.swift */,
@@ -158,24 +130,6 @@
 			productReference = 19FAB01222071BCE00F8BE03 /* FlexibleViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		19FAB01A22071BCF00F8BE03 /* FlexibleViewControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 19FAB02922071BCF00F8BE03 /* Build configuration list for PBXNativeTarget "FlexibleViewControllerTests" */;
-			buildPhases = (
-				19FAB01722071BCF00F8BE03 /* Sources */,
-				19FAB01822071BCF00F8BE03 /* Frameworks */,
-				19FAB01922071BCF00F8BE03 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				19FAB01E22071BCF00F8BE03 /* PBXTargetDependency */,
-			);
-			name = FlexibleViewControllerTests;
-			productName = FlexibleViewControllerTests;
-			productReference = 19FAB01B22071BCF00F8BE03 /* FlexibleViewControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		19FAB02F22071C3600F8BE03 /* FlexibleViewController-Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19FAB04122071C3800F8BE03 /* Build configuration list for PBXNativeTarget "FlexibleViewController-Demo" */;
@@ -206,9 +160,6 @@
 					19FAB01122071BCE00F8BE03 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					19FAB01A22071BCF00F8BE03 = {
-						CreatedOnToolsVersion = 10.1;
-					};
 					19FAB02F22071C3600F8BE03 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -228,7 +179,6 @@
 			projectRoot = "";
 			targets = (
 				19FAB01122071BCE00F8BE03 /* FlexibleViewController */,
-				19FAB01A22071BCF00F8BE03 /* FlexibleViewControllerTests */,
 				19FAB02F22071C3600F8BE03 /* FlexibleViewController-Demo */,
 			);
 		};
@@ -236,13 +186,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		19FAB01022071BCE00F8BE03 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19FAB01922071BCF00F8BE03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,34 +212,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19FAB01722071BCF00F8BE03 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19FAB02122071BCF00F8BE03 /* FlexibleViewControllerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		19FAB02C22071C3600F8BE03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				19FAB04322071E6000F8BE03 /* DetailViewController.swift in Sources */,
+				19FAB0492209479E00F8BE03 /* DismissAnimator.swift in Sources */,
 				19FAB0452207207300F8BE03 /* FlexibleAnimationController.swift in Sources */,
+				19FAB0472209478700F8BE03 /* Interactor.swift in Sources */,
 				19FAB03522071C3600F8BE03 /* ViewController.swift in Sources */,
 				19FAB03322071C3600F8BE03 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		19FAB01E22071BCF00F8BE03 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 19FAB01122071BCE00F8BE03 /* FlexibleViewController */;
-			targetProxy = 19FAB01D22071BCF00F8BE03 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19FAB03622071C3600F8BE03 /* Main.storyboard */ = {
@@ -490,42 +419,6 @@
 			};
 			name = Release;
 		};
-		19FAB02A22071BCF00F8BE03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4G7K3CN2JU;
-				INFOPLIST_FILE = FlexibleViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seungyounyi.FlexibleViewControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		19FAB02B22071BCF00F8BE03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4G7K3CN2JU;
-				INFOPLIST_FILE = FlexibleViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seungyounyi.FlexibleViewControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		19FAB03F22071C3800F8BE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -579,15 +472,6 @@
 			buildConfigurations = (
 				19FAB02722071BCF00F8BE03 /* Debug */,
 				19FAB02822071BCF00F8BE03 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		19FAB02922071BCF00F8BE03 /* Build configuration list for PBXNativeTarget "FlexibleViewControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				19FAB02A22071BCF00F8BE03 /* Debug */,
-				19FAB02B22071BCF00F8BE03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
