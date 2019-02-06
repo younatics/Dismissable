@@ -9,11 +9,14 @@
 import UIKit
 
 open class DismissAnimator : NSObject {
+    public var transitionDuration: TimeInterval = 0.35
+    public var dimmedViewStartColor: UIColor = UIColor.black.withAlphaComponent(0.4)
+    public var dimmedViewEndColor: UIColor = UIColor.black.withAlphaComponent(0)
 }
 
 extension DismissAnimator : UIViewControllerAnimatedTransitioning {
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.35
+        return transitionDuration
     }
     
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -22,7 +25,7 @@ extension DismissAnimator : UIViewControllerAnimatedTransitioning {
             let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) else { return }
         
         let dimmedView = UIView(frame: UIScreen.main.bounds)
-        dimmedView.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        dimmedView.backgroundColor = dimmedViewStartColor
         toVC.view.addSubview(dimmedView)
         
         transitionContext.containerView.insertSubview(toVC.view, belowSubview: fromVC.view)
@@ -34,13 +37,11 @@ extension DismissAnimator : UIViewControllerAnimatedTransitioning {
         UIView.animate(
             withDuration: transitionDuration(using: transitionContext),
             animations: {
-                dimmedView.backgroundColor = UIColor.black.withAlphaComponent(0)
+                dimmedView.backgroundColor = self.dimmedViewEndColor
                 fromVC.view.frame = finalFrame
-        },
-            completion: { _ in
+        }, completion: { _ in
                 dimmedView.removeFromSuperview()
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-        }
-        )
+        })
     }
 }
