@@ -7,173 +7,179 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19FAB05A220AED5E00F8BE03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB04B220AED5E00F8BE03 /* ViewController.swift */; };
-		19FAB05B220AED5E00F8BE03 /* FlexibleAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB04C220AED5E00F8BE03 /* FlexibleAnimationController.swift */; };
-		19FAB05C220AED5E00F8BE03 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB04D220AED5E00F8BE03 /* DetailViewController.swift */; };
-		19FAB05D220AED5E00F8BE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FAB04E220AED5E00F8BE03 /* Assets.xcassets */; };
-		19FAB05E220AED5E00F8BE03 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB04F220AED5E00F8BE03 /* Interactor.swift */; };
-		19FAB05F220AED5E00F8BE03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FAB050220AED5E00F8BE03 /* LaunchScreen.storyboard */; };
-		19FAB060220AED5E00F8BE03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FAB052220AED5E00F8BE03 /* Main.storyboard */; };
-		19FAB061220AED5E00F8BE03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB054220AED5E00F8BE03 /* AppDelegate.swift */; };
-		19FAB062220AED5E00F8BE03 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19FAB055220AED5E00F8BE03 /* Info.plist */; };
-		19FAB063220AED5E00F8BE03 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB056220AED5E00F8BE03 /* DismissAnimator.swift */; };
-		19FAB064220AED5E00F8BE03 /* Dismissable.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FAB058220AED5E00F8BE03 /* Dismissable.h */; };
-		19FAB065220AED5E00F8BE03 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19FAB059220AED5E00F8BE03 /* Info.plist */; };
-		19FAB067220AED8600F8BE03 /* DismissableUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB066220AED8600F8BE03 /* DismissableUIViewController.swift */; };
-		19FAB069220AEE1500F8BE03 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAB068220AEE1500F8BE03 /* DismissAnimator.swift */; };
+		199953B5220AF1A900A59D3B /* Dismissable.h in Headers */ = {isa = PBXBuildFile; fileRef = 199953B3220AF1A900A59D3B /* Dismissable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E47C88220AF2000025DBC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47C87220AF2000025DBC0 /* AppDelegate.swift */; };
+		19E47C8A220AF2000025DBC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47C89220AF2000025DBC0 /* ViewController.swift */; };
+		19E47C8D220AF2000025DBC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E47C8B220AF2000025DBC0 /* Main.storyboard */; };
+		19E47C8F220AF2010025DBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E47C8E220AF2010025DBC0 /* Assets.xcassets */; };
+		19E47C92220AF2010025DBC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E47C90220AF2010025DBC0 /* LaunchScreen.storyboard */; };
+		19E47C9B220AF2370025DBC0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47C97220AF2370025DBC0 /* DetailViewController.swift */; };
+		19E47CA1220AF23F0025DBC0 /* DismissableUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47C9F220AF23F0025DBC0 /* DismissableUIViewController.swift */; };
+		19E47CA2220AF23F0025DBC0 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47CA0220AF23F0025DBC0 /* DismissAnimator.swift */; };
+		19E47CA4220AF2B90025DBC0 /* DismissInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47CA3220AF2B90025DBC0 /* DismissInteractor.swift */; };
+		19E47CA6220AF2F40025DBC0 /* DismissTriggerUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47CA5220AF2F40025DBC0 /* DismissTriggerUIViewController.swift */; };
+		19E47CA8220AF3FD0025DBC0 /* Dismissable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199953B0220AF1A900A59D3B /* Dismissable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19FAB01222071BCE00F8BE03 /* Dismissable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dismissable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19FAB03022071C3600F8BE03 /* Dismissable-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dismissable-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		19FAB04B220AED5E00F8BE03 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		19FAB04C220AED5E00F8BE03 /* FlexibleAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleAnimationController.swift; sourceTree = "<group>"; };
-		19FAB04D220AED5E00F8BE03 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		19FAB04E220AED5E00F8BE03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		19FAB04F220AED5E00F8BE03 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		19FAB051220AED5E00F8BE03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		19FAB053220AED5E00F8BE03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		19FAB054220AED5E00F8BE03 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19FAB055220AED5E00F8BE03 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19FAB056220AED5E00F8BE03 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
-		19FAB058220AED5E00F8BE03 /* Dismissable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dismissable.h; sourceTree = "<group>"; };
-		19FAB059220AED5E00F8BE03 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19FAB066220AED8600F8BE03 /* DismissableUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableUIViewController.swift; sourceTree = "<group>"; };
-		19FAB068220AEE1500F8BE03 /* DismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
+		199953B0220AF1A900A59D3B /* Dismissable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dismissable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		199953B3220AF1A900A59D3B /* Dismissable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dismissable.h; sourceTree = "<group>"; };
+		199953B4220AF1A900A59D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E47C85220AF2000025DBC0 /* Dismissable-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dismissable-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19E47C87220AF2000025DBC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19E47C89220AF2000025DBC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19E47C8C220AF2000025DBC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19E47C8E220AF2010025DBC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19E47C91220AF2010025DBC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19E47C93220AF2010025DBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E47C97220AF2370025DBC0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		19E47C9F220AF23F0025DBC0 /* DismissableUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissableUIViewController.swift; sourceTree = "<group>"; };
+		19E47CA0220AF23F0025DBC0 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
+		19E47CA3220AF2B90025DBC0 /* DismissInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissInteractor.swift; sourceTree = "<group>"; };
+		19E47CA5220AF2F40025DBC0 /* DismissTriggerUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTriggerUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		19FAB00F22071BCE00F8BE03 /* Frameworks */ = {
+		199953AD220AF1A900A59D3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19FAB02D22071C3600F8BE03 /* Frameworks */ = {
+		19E47C82220AF2000025DBC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E47CA8220AF3FD0025DBC0 /* Dismissable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19FAB00822071BCE00F8BE03 = {
+		199953A6220AF1A900A59D3B = {
 			isa = PBXGroup;
 			children = (
-				19FAB057220AED5E00F8BE03 /* Dismissable */,
-				19FAB04A220AED5E00F8BE03 /* Dismissable-Demo */,
-				19FAB01322071BCE00F8BE03 /* Products */,
+				199953B2220AF1A900A59D3B /* Dismissable */,
+				19E47C86220AF2000025DBC0 /* Dismissable-Demo */,
+				199953B1220AF1A900A59D3B /* Products */,
+				19E47CA7220AF3FD0025DBC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		19FAB01322071BCE00F8BE03 /* Products */ = {
+		199953B1220AF1A900A59D3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				19FAB01222071BCE00F8BE03 /* Dismissable.framework */,
-				19FAB03022071C3600F8BE03 /* Dismissable-Demo.app */,
+				199953B0220AF1A900A59D3B /* Dismissable.framework */,
+				19E47C85220AF2000025DBC0 /* Dismissable-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		19FAB04A220AED5E00F8BE03 /* Dismissable-Demo */ = {
+		199953B2220AF1A900A59D3B /* Dismissable */ = {
 			isa = PBXGroup;
 			children = (
-				19FAB04B220AED5E00F8BE03 /* ViewController.swift */,
-				19FAB04C220AED5E00F8BE03 /* FlexibleAnimationController.swift */,
-				19FAB04D220AED5E00F8BE03 /* DetailViewController.swift */,
-				19FAB04E220AED5E00F8BE03 /* Assets.xcassets */,
-				19FAB04F220AED5E00F8BE03 /* Interactor.swift */,
-				19FAB050220AED5E00F8BE03 /* LaunchScreen.storyboard */,
-				19FAB052220AED5E00F8BE03 /* Main.storyboard */,
-				19FAB054220AED5E00F8BE03 /* AppDelegate.swift */,
-				19FAB055220AED5E00F8BE03 /* Info.plist */,
-				19FAB056220AED5E00F8BE03 /* DismissAnimator.swift */,
+				19E47CA5220AF2F40025DBC0 /* DismissTriggerUIViewController.swift */,
+				19E47C9F220AF23F0025DBC0 /* DismissableUIViewController.swift */,
+				19E47CA0220AF23F0025DBC0 /* DismissAnimator.swift */,
+				19E47CA3220AF2B90025DBC0 /* DismissInteractor.swift */,
+				199953B3220AF1A900A59D3B /* Dismissable.h */,
+				199953B4220AF1A900A59D3B /* Info.plist */,
+			);
+			path = Dismissable;
+			sourceTree = "<group>";
+		};
+		19E47C86220AF2000025DBC0 /* Dismissable-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				19E47C89220AF2000025DBC0 /* ViewController.swift */,
+				19E47C97220AF2370025DBC0 /* DetailViewController.swift */,
+				19E47C8B220AF2000025DBC0 /* Main.storyboard */,
+				19E47C87220AF2000025DBC0 /* AppDelegate.swift */,
+				19E47C8E220AF2010025DBC0 /* Assets.xcassets */,
+				19E47C90220AF2010025DBC0 /* LaunchScreen.storyboard */,
+				19E47C93220AF2010025DBC0 /* Info.plist */,
 			);
 			path = "Dismissable-Demo";
 			sourceTree = "<group>";
 		};
-		19FAB057220AED5E00F8BE03 /* Dismissable */ = {
+		19E47CA7220AF3FD0025DBC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				19FAB058220AED5E00F8BE03 /* Dismissable.h */,
-				19FAB066220AED8600F8BE03 /* DismissableUIViewController.swift */,
-				19FAB059220AED5E00F8BE03 /* Info.plist */,
-				19FAB068220AEE1500F8BE03 /* DismissAnimator.swift */,
 			);
-			path = Dismissable;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		19FAB00D22071BCE00F8BE03 /* Headers */ = {
+		199953AB220AF1A900A59D3B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19FAB064220AED5E00F8BE03 /* Dismissable.h in Headers */,
+				199953B5220AF1A900A59D3B /* Dismissable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		19FAB01122071BCE00F8BE03 /* Dismissable */ = {
+		199953AF220AF1A900A59D3B /* Dismissable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19FAB02622071BCF00F8BE03 /* Build configuration list for PBXNativeTarget "Dismissable" */;
+			buildConfigurationList = 199953B8220AF1A900A59D3B /* Build configuration list for PBXNativeTarget "Dismissable" */;
 			buildPhases = (
-				19FAB00D22071BCE00F8BE03 /* Headers */,
-				19FAB00E22071BCE00F8BE03 /* Sources */,
-				19FAB00F22071BCE00F8BE03 /* Frameworks */,
-				19FAB01022071BCE00F8BE03 /* Resources */,
+				199953AB220AF1A900A59D3B /* Headers */,
+				199953AC220AF1A900A59D3B /* Sources */,
+				199953AD220AF1A900A59D3B /* Frameworks */,
+				199953AE220AF1A900A59D3B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Dismissable;
-			productName = FlexibleViewController;
-			productReference = 19FAB01222071BCE00F8BE03 /* Dismissable.framework */;
+			productName = Dismissable;
+			productReference = 199953B0220AF1A900A59D3B /* Dismissable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		19FAB02F22071C3600F8BE03 /* Dismissable-Demo */ = {
+		19E47C84220AF2000025DBC0 /* Dismissable-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19FAB04122071C3800F8BE03 /* Build configuration list for PBXNativeTarget "Dismissable-Demo" */;
+			buildConfigurationList = 19E47C96220AF2010025DBC0 /* Build configuration list for PBXNativeTarget "Dismissable-Demo" */;
 			buildPhases = (
-				19FAB02C22071C3600F8BE03 /* Sources */,
-				19FAB02D22071C3600F8BE03 /* Frameworks */,
-				19FAB02E22071C3600F8BE03 /* Resources */,
+				19E47C81220AF2000025DBC0 /* Sources */,
+				19E47C82220AF2000025DBC0 /* Frameworks */,
+				19E47C83220AF2000025DBC0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Dismissable-Demo";
-			productName = "FlexibleViewController-Demo";
-			productReference = 19FAB03022071C3600F8BE03 /* Dismissable-Demo.app */;
+			productName = "Dismissable-Demo";
+			productReference = 19E47C85220AF2000025DBC0 /* Dismissable-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		19FAB00922071BCE00F8BE03 /* Project object */ = {
+		199953A7220AF1A900A59D3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Seungyoun Yi";
 				TargetAttributes = {
-					19FAB01122071BCE00F8BE03 = {
+					199953AF220AF1A900A59D3B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
-					19FAB02F22071C3600F8BE03 = {
+					19E47C84220AF2000025DBC0 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 19FAB00C22071BCE00F8BE03 /* Build configuration list for PBXProject "Dismissable" */;
+			buildConfigurationList = 199953AA220AF1A900A59D3B /* Build configuration list for PBXProject "Dismissable" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,85 +187,82 @@
 				en,
 				Base,
 			);
-			mainGroup = 19FAB00822071BCE00F8BE03;
-			productRefGroup = 19FAB01322071BCE00F8BE03 /* Products */;
+			mainGroup = 199953A6220AF1A900A59D3B;
+			productRefGroup = 199953B1220AF1A900A59D3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				19FAB01122071BCE00F8BE03 /* Dismissable */,
-				19FAB02F22071C3600F8BE03 /* Dismissable-Demo */,
+				199953AF220AF1A900A59D3B /* Dismissable */,
+				19E47C84220AF2000025DBC0 /* Dismissable-Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		19FAB01022071BCE00F8BE03 /* Resources */ = {
+		199953AE220AF1A900A59D3B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19FAB062220AED5E00F8BE03 /* Info.plist in Resources */,
-				19FAB060220AED5E00F8BE03 /* Main.storyboard in Resources */,
-				19FAB05D220AED5E00F8BE03 /* Assets.xcassets in Resources */,
-				19FAB065220AED5E00F8BE03 /* Info.plist in Resources */,
-				19FAB05F220AED5E00F8BE03 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19FAB02E22071C3600F8BE03 /* Resources */ = {
+		19E47C83220AF2000025DBC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E47C92220AF2010025DBC0 /* LaunchScreen.storyboard in Resources */,
+				19E47C8F220AF2010025DBC0 /* Assets.xcassets in Resources */,
+				19E47C8D220AF2000025DBC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		19FAB00E22071BCE00F8BE03 /* Sources */ = {
+		199953AC220AF1A900A59D3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19FAB067220AED8600F8BE03 /* DismissableUIViewController.swift in Sources */,
-				19FAB05C220AED5E00F8BE03 /* DetailViewController.swift in Sources */,
-				19FAB063220AED5E00F8BE03 /* DismissAnimator.swift in Sources */,
-				19FAB05A220AED5E00F8BE03 /* ViewController.swift in Sources */,
-				19FAB05E220AED5E00F8BE03 /* Interactor.swift in Sources */,
-				19FAB061220AED5E00F8BE03 /* AppDelegate.swift in Sources */,
-				19FAB05B220AED5E00F8BE03 /* FlexibleAnimationController.swift in Sources */,
-				19FAB069220AEE1500F8BE03 /* DismissAnimator.swift in Sources */,
+				19E47CA6220AF2F40025DBC0 /* DismissTriggerUIViewController.swift in Sources */,
+				19E47CA1220AF23F0025DBC0 /* DismissableUIViewController.swift in Sources */,
+				19E47CA4220AF2B90025DBC0 /* DismissInteractor.swift in Sources */,
+				19E47CA2220AF23F0025DBC0 /* DismissAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19FAB02C22071C3600F8BE03 /* Sources */ = {
+		19E47C81220AF2000025DBC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E47C9B220AF2370025DBC0 /* DetailViewController.swift in Sources */,
+				19E47C8A220AF2000025DBC0 /* ViewController.swift in Sources */,
+				19E47C88220AF2000025DBC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		19FAB050220AED5E00F8BE03 /* LaunchScreen.storyboard */ = {
+		19E47C8B220AF2000025DBC0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				19FAB051220AED5E00F8BE03 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		19FAB052220AED5E00F8BE03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19FAB053220AED5E00F8BE03 /* Base */,
+				19E47C8C220AF2000025DBC0 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19E47C90220AF2010025DBC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19E47C91220AF2010025DBC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		19FAB02422071BCF00F8BE03 /* Debug */ = {
+		199953B6220AF1A900A59D3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -323,7 +326,7 @@
 			};
 			name = Debug;
 		};
-		19FAB02522071BCF00F8BE03 /* Release */ = {
+		199953B7220AF1A900A59D3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -381,9 +384,10 @@
 			};
 			name = Release;
 		};
-		19FAB02722071BCF00F8BE03 /* Debug */ = {
+		199953B9220AF1A900A59D3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,24 +395,26 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FlexibleViewController/Info.plist;
+				INFOPLIST_FILE = Dismissable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seungyounyi.FlexibleViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seungyounyi.Dismissable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		19FAB02822071BCF00F8BE03 /* Release */ = {
+		199953BA220AF1A900A59D3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -416,14 +422,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FlexibleViewController/Info.plist;
+				INFOPLIST_FILE = Dismissable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seungyounyi.FlexibleViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seungyounyi.Dismissable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -431,36 +437,36 @@
 			};
 			name = Release;
 		};
-		19FAB03F22071C3800F8BE03 /* Debug */ = {
+		19E47C94220AF2010025DBC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4G7K3CN2JU;
-				INFOPLIST_FILE = "FlexibleViewController-Demo/Info.plist";
+				INFOPLIST_FILE = "Dismissable-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.seungyounyi.FlexibleViewController-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seungyounyi.Dismissable-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		19FAB04022071C3800F8BE03 /* Release */ = {
+		19E47C95220AF2010025DBC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4G7K3CN2JU;
-				INFOPLIST_FILE = "FlexibleViewController-Demo/Info.plist";
+				INFOPLIST_FILE = "Dismissable-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.seungyounyi.FlexibleViewController-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seungyounyi.Dismissable-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,34 +476,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		19FAB00C22071BCE00F8BE03 /* Build configuration list for PBXProject "Dismissable" */ = {
+		199953AA220AF1A900A59D3B /* Build configuration list for PBXProject "Dismissable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19FAB02422071BCF00F8BE03 /* Debug */,
-				19FAB02522071BCF00F8BE03 /* Release */,
+				199953B6220AF1A900A59D3B /* Debug */,
+				199953B7220AF1A900A59D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		19FAB02622071BCF00F8BE03 /* Build configuration list for PBXNativeTarget "Dismissable" */ = {
+		199953B8220AF1A900A59D3B /* Build configuration list for PBXNativeTarget "Dismissable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19FAB02722071BCF00F8BE03 /* Debug */,
-				19FAB02822071BCF00F8BE03 /* Release */,
+				199953B9220AF1A900A59D3B /* Debug */,
+				199953BA220AF1A900A59D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		19FAB04122071C3800F8BE03 /* Build configuration list for PBXNativeTarget "Dismissable-Demo" */ = {
+		19E47C96220AF2010025DBC0 /* Build configuration list for PBXNativeTarget "Dismissable-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19FAB03F22071C3800F8BE03 /* Debug */,
-				19FAB04022071C3800F8BE03 /* Release */,
+				19E47C94220AF2010025DBC0 /* Debug */,
+				19E47C95220AF2010025DBC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 19FAB00922071BCE00F8BE03 /* Project object */;
+	rootObject = 199953A7220AF1A900A59D3B /* Project object */;
 }

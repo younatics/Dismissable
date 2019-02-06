@@ -7,19 +7,10 @@
 //
 
 import UIKit
+import Dismissable
 
-class DismissTriggerUIViewController: UIViewController {
-    
-}
-
-class DismissableViewController: UIViewController {
-}
-
-class ViewController: UIViewController {
+class ViewController: DismissTriggerUIViewController {
     @IBOutlet weak var tableView: UITableView!
-    
-    let interactor = Interactor()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
