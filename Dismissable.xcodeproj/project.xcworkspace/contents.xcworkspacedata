@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FlexibleViewController.xcodeproj">
+      location = "self:/Users/seungyounyi/FlexibleViewController/Dismissable.xcodeproj">
    </FileRef>
 </Workspace>

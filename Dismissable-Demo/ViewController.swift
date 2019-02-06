@@ -8,6 +8,13 @@
 
 import UIKit
 
+class DismissTriggerUIViewController: UIViewController {
+    
+}
+
+class DismissableViewController: UIViewController {
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     

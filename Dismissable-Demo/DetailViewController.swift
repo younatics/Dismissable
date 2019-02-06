@@ -8,16 +8,14 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, Dismissable {
     @IBOutlet weak var tableView: UITableView!
     
     var interactor:Interactor? = nil
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
-        self.tableView.delegate = self
         
         let panGesture = UIPanGestureRecognizer()
         panGesture.addTarget(self, action: #selector(pangestureClicked))
@@ -34,7 +32,6 @@ class DetailViewController: UIViewController {
         let downwardMovement = fmaxf(Float(verticalMovement), 0.0)
         let downwardMovementPercent = fminf(downwardMovement, 1.0)
         let progress = CGFloat(downwardMovementPercent)
-        print("progress: \(progress)")
         guard let interactor = interactor else { return }
         
         switch sender.state {
@@ -83,15 +80,7 @@ extension DetailViewController: UITableViewDataSource {
             return UITableViewCell()
         }
     }
-    
-    
 }
 
 extension DetailViewController: UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
-    }
-}
-extension DetailViewController: UITableViewDelegate {
-    
 }
