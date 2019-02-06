@@ -16,7 +16,6 @@ class DetailViewController: DismissableUIViewController {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
-        
     }
     
     @IBAction func closeButtonClicked(_ sender: UIButton) {
