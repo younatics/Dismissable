@@ -9,15 +9,16 @@
 import UIKit
 
 open class DismissTriggerUIViewController: UIViewController {
-    public let interactor = DismissInteractor()
+    public let dismissInteractor = DismissInteractor()
+    public var dismissAnimator = DismissAnimator()
 }
 
 extension DismissTriggerUIViewController: UIViewControllerTransitioningDelegate {
     public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return DismissAnimator()
+        return dismissAnimator
     }
     
     public func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        return interactor.hasStarted ? interactor : nil
+        return dismissInteractor.hasStarted ? dismissInteractor : nil
     }
 }

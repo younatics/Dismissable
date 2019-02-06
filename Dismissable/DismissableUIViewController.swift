@@ -9,7 +9,14 @@
 import UIKit
 
 open class DismissableUIViewController: UIViewController {
-    public var interactor: DismissInteractor? = nil
+    public var dismissable: (vc: UIViewController, dismissInteractor: DismissInteractor)? {
+        didSet {
+            self.transitioningDelegate = dismissable?.vc as? UIViewControllerTransitioningDelegate
+            self.dismissInteractor = dismissable?.dismissInteractor
+        }
+    }
+
+    public var dismissInteractor: DismissInteractor? = nil
     public var percentThreshold: CGFloat = 0.3
 
     override open func viewDidLoad() {
@@ -24,7 +31,7 @@ open class DismissableUIViewController: UIViewController {
     @objc func pangestureClicked(_ sender: UIPanGestureRecognizer) {
         let verticalMovement = Float(sender.translation(in: view).y / view.bounds.height)
         let progress = CGFloat(fminf(fmaxf(verticalMovement, 0.0), 1.0))
-        guard let interactor = interactor else { return }
+        guard let interactor = dismissInteractor else { return }
         
         switch sender.state {
         case .began:

@@ -17,6 +17,11 @@ class ViewController: DismissTriggerUIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // Custom Values
+        dismissAnimator.transitionDuration = 0.35
+        dismissAnimator.dimmedViewStartColor = UIColor.black.withAlphaComponent(0.4)
+        dismissAnimator.dimmedViewEndColor = UIColor.black.withAlphaComponent(0)
     }
 }
 
@@ -25,8 +30,7 @@ extension ViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
-        vc.transitioningDelegate = self
-        vc.interactor = interactor
+        vc.dismissable = (self, dismissInteractor)
         self.present(vc, animated: true, completion: nil)
     }
 }
