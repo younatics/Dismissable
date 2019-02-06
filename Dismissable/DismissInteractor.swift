@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DismissInteractor: UIPercentDrivenInteractiveTransition {
+open class DismissInteractor: UIPercentDrivenInteractiveTransition {
     var hasStarted = false
     var shouldFinish = false
 }

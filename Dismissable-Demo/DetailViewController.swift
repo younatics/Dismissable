@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import Dismissable
 
 class DetailViewController: DismissableUIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var interactor:Interactor? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         

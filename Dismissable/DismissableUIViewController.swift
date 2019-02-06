@@ -8,10 +8,10 @@
 
 import UIKit
 
-public class DismissableUIViewController: UIViewController {
+open class DismissableUIViewController: UIViewController {
     public var interactor: DismissInteractor? = nil
 
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         let panGesture = UIPanGestureRecognizer()
@@ -52,7 +52,7 @@ public class DismissableUIViewController: UIViewController {
 }
 
 extension DismissableUIViewController: UIGestureRecognizerDelegate {
-    private func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
 }
