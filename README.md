@@ -6,7 +6,7 @@
 [![Swift 4.0](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 ## Introduction
-⚡️Pull to dismiss your model view! `Dismissable` is super convenient to dismiss with gesture!
+⚡️Pull to dismiss your modal view! `Dismissable` is super convenient to dismiss with gesture!
 
 ![demo](https://github.com/younatics/Dismissable/blob/master/image/Dismissable.gif)
 
