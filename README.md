@@ -48,9 +48,13 @@ self.present(vc, animated: true, completion: nil)
 
 Also you can customize dismiss animator
 ```swift
-dismissAnimator.transitionDuration = 0.35
-dismissAnimator.dimmedViewStartColor = UIColor.black.withAlphaComponent(0.4)
-dismissAnimator.dimmedViewEndColor = UIColor.black.withAlphaComponent(0)
+var dismissAnimator: DismissAnimator = {
+  let animator = DismissAnimator()
+  animator.transitionDuration = 0.35
+  animator.dimmedViewStartColor = UIColor.black.withAlphaComponent(0.4)
+  animator.dimmedViewEndColor = UIColor.black.withAlphaComponent(0)
+  return animator
+ }()
 ```
 
 ## References
