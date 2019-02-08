@@ -31,18 +31,18 @@ github "younatics/Dismissable"
 
 ## Usage
 
-Inherit `DismissTriggerUIViewController` where present modal view
+Conform `DismissTriggerUsable` where present modal ViewController
 ```swift
-class ViewController: DismissTriggerUIViewController
+class ViewController: UIViewController, DismissTriggerUsable
 ```
-Inherit `DismissableUIViewController` in modal view
+Conform `DismissableUsable` in modal ViewController
 ```swift
-class DetailViewController: DismissableUIViewController
+class DetailViewController: UIViewController, DismissableUsable
 ```
 Add `dismissable` when prsent modal view
 ```swift
 let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
-vc.dismissable = (self, dismissInteractor)
+vc.setup(dismissable: (self, dismissInteractor))
 self.present(vc, animated: true, completion: nil)
 ```
 

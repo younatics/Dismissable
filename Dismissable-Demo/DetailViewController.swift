@@ -9,7 +9,8 @@
 import UIKit
 import Dismissable
 
-class DetailViewController: DismissableUIViewController {
+class DetailViewController: UIViewController, DismissableUsable {
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

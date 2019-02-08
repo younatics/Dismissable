@@ -14,12 +14,13 @@
 		19E47C8F220AF2010025DBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E47C8E220AF2010025DBC0 /* Assets.xcassets */; };
 		19E47C92220AF2010025DBC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E47C90220AF2010025DBC0 /* LaunchScreen.storyboard */; };
 		19E47C9B220AF2370025DBC0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47C97220AF2370025DBC0 /* DetailViewController.swift */; };
-		19E47CA1220AF23F0025DBC0 /* DismissableUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47C9F220AF23F0025DBC0 /* DismissableUIViewController.swift */; };
+		19E47CA1220AF23F0025DBC0 /* DismissableUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47C9F220AF23F0025DBC0 /* DismissableUsable.swift */; };
 		19E47CA2220AF23F0025DBC0 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47CA0220AF23F0025DBC0 /* DismissAnimator.swift */; };
 		19E47CA4220AF2B90025DBC0 /* DismissInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47CA3220AF2B90025DBC0 /* DismissInteractor.swift */; };
-		19E47CA6220AF2F40025DBC0 /* DismissTriggerUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47CA5220AF2F40025DBC0 /* DismissTriggerUIViewController.swift */; };
+		19E47CA6220AF2F40025DBC0 /* DismissTriggerUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47CA5220AF2F40025DBC0 /* DismissTriggerUsable.swift */; };
 		19E47CA8220AF3FD0025DBC0 /* Dismissable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199953B0220AF1A900A59D3B /* Dismissable.framework */; };
 		19E47CAA220AF8460025DBC0 /* Dismissable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 199953B0220AF1A900A59D3B /* Dismissable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE5B4099220D3EAA009C3066 /* UIViewController+Dismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B4098220D3EAA009C3066 /* UIViewController+Dismissable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +59,11 @@
 		19E47C91220AF2010025DBC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19E47C93220AF2010025DBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19E47C97220AF2370025DBC0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		19E47C9F220AF23F0025DBC0 /* DismissableUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissableUIViewController.swift; sourceTree = "<group>"; };
+		19E47C9F220AF23F0025DBC0 /* DismissableUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissableUsable.swift; sourceTree = "<group>"; };
 		19E47CA0220AF23F0025DBC0 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		19E47CA3220AF2B90025DBC0 /* DismissInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissInteractor.swift; sourceTree = "<group>"; };
-		19E47CA5220AF2F40025DBC0 /* DismissTriggerUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTriggerUIViewController.swift; sourceTree = "<group>"; };
+		19E47CA5220AF2F40025DBC0 /* DismissTriggerUsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTriggerUsable.swift; sourceTree = "<group>"; };
+		CE5B4098220D3EAA009C3066 /* UIViewController+Dismissable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dismissable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +107,9 @@
 		199953B2220AF1A900A59D3B /* Dismissable */ = {
 			isa = PBXGroup;
 			children = (
-				19E47CA5220AF2F40025DBC0 /* DismissTriggerUIViewController.swift */,
-				19E47C9F220AF23F0025DBC0 /* DismissableUIViewController.swift */,
+				19E47CA5220AF2F40025DBC0 /* DismissTriggerUsable.swift */,
+				19E47C9F220AF23F0025DBC0 /* DismissableUsable.swift */,
+				CE5B4098220D3EAA009C3066 /* UIViewController+Dismissable.swift */,
 				19E47CA0220AF23F0025DBC0 /* DismissAnimator.swift */,
 				19E47CA3220AF2B90025DBC0 /* DismissInteractor.swift */,
 				199953B3220AF1A900A59D3B /* Dismissable.h */,
@@ -250,9 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E47CA6220AF2F40025DBC0 /* DismissTriggerUIViewController.swift in Sources */,
-				19E47CA1220AF23F0025DBC0 /* DismissableUIViewController.swift in Sources */,
+				19E47CA6220AF2F40025DBC0 /* DismissTriggerUsable.swift in Sources */,
+				19E47CA1220AF23F0025DBC0 /* DismissableUsable.swift in Sources */,
 				19E47CA4220AF2B90025DBC0 /* DismissInteractor.swift in Sources */,
+				CE5B4099220D3EAA009C3066 /* UIViewController+Dismissable.swift in Sources */,
 				19E47CA2220AF23F0025DBC0 /* DismissAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
