@@ -15,6 +15,11 @@ public protocol DismissTriggerUsable {
     var dismissAnimator: DismissAnimator { get }
 }
 
+public extension DismissTriggerUsable {
+    var dismissInteractor: DismissInteractor { return DismissInteractor.default }
+    var dismissAnimator: DismissAnimator { return DismissAnimator.default }
+}
+
 final class DismissTriggerTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
     
     private weak var rootViewController: DismissTriggerViewController?
