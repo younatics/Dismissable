@@ -11,13 +11,14 @@ import Dismissable
 
 class ViewController: UIViewController, DismissTriggerUsable {
     
-//    // Custom Animator
-//    var dismissAnimator: DismissAnimator = {
-//        let animator = DismissAnimator()
-//        animator.dimmedViewStartColor = UIColor.blue.withAlphaComponent(0.4)
-//        animator.dimmedViewEndColor = UIColor.blue.withAlphaComponent(0)
-//        return animator
-//    }()
+    // Custom Animator
+    var dismissAnimator: DismissAnimator = {
+        let animator = DismissAnimator()
+        animator.transitionDuration = 0.35
+        animator.dimmedViewStartColor = UIColor.black.withAlphaComponent(0.4)
+        animator.dimmedViewEndColor = UIColor.black.withAlphaComponent(0)
+        return animator
+    }()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,11 +27,6 @@ class ViewController: UIViewController, DismissTriggerUsable {
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        // Custom Values
-        dismissAnimator.transitionDuration = 0.35
-        dismissAnimator.dimmedViewStartColor = UIColor.black.withAlphaComponent(0.4)
-        dismissAnimator.dimmedViewEndColor = UIColor.black.withAlphaComponent(0)
     }
 }
 

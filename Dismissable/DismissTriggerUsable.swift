@@ -21,7 +21,6 @@ public extension DismissTriggerUsable {
 }
 
 final class DismissTriggerTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
-    
     private weak var rootViewController: DismissTriggerViewController?
     
     init(rootViewController: DismissTriggerViewController) {
