@@ -9,7 +9,11 @@
 import UIKit
 import Dismissable
 
-class ViewController: DismissTriggerUIViewController {
+class ViewController: UIViewController, DismissTriggerUsable, UIViewControllerTransitioningDelegate {
+    
+    var dismissInteractor: DismissInteractor = DismissInteractor()
+    var dismissAnimator: DismissAnimator = DismissAnimator()
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -29,8 +33,8 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
-        vc.dismissable = (self, dismissInteractor)
+        var vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
+        vc.setup(dismissable: (self, dismissInteractor))
         self.present(vc, animated: true, completion: nil)
     }
 }
