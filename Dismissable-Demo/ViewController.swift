@@ -11,8 +11,13 @@ import Dismissable
 
 class ViewController: UIViewController, DismissTriggerUsable {
     
-    var dismissInteractor: DismissInteractor = DismissInteractor()
-    var dismissAnimator: DismissAnimator = DismissAnimator()
+//    // Custom Animator
+//    var dismissAnimator: DismissAnimator = {
+//        let animator = DismissAnimator()
+//        animator.dimmedViewStartColor = UIColor.blue.withAlphaComponent(0.4)
+//        animator.dimmedViewEndColor = UIColor.blue.withAlphaComponent(0)
+//        return animator
+//    }()
     
     @IBOutlet weak var tableView: UITableView!
     

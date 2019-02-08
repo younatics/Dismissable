@@ -12,3 +12,7 @@ open class DismissInteractor: UIPercentDrivenInteractiveTransition {
     var hasStarted = false
     var shouldFinish = false
 }
+
+extension DismissInteractor {
+    static var `default`: DismissInteractor = DismissInteractor()
+}

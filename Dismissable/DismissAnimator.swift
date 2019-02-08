@@ -14,6 +14,10 @@ open class DismissAnimator : NSObject {
     public var dimmedViewEndColor: UIColor = UIColor.black.withAlphaComponent(0)
 }
 
+extension DismissAnimator {
+    static var `default`: DismissAnimator = DismissAnimator()
+}
+
 extension DismissAnimator : UIViewControllerAnimatedTransitioning {
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return transitionDuration
