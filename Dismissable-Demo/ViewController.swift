@@ -9,7 +9,7 @@
 import UIKit
 import Dismissable
 
-class ViewController: UIViewController, DismissTriggerUsable, UIViewControllerTransitioningDelegate {
+class ViewController: UIViewController, DismissTriggerUsable {
     
     var dismissInteractor: DismissInteractor = DismissInteractor()
     var dismissAnimator: DismissAnimator = DismissAnimator()
