@@ -31,9 +31,11 @@ github "younatics/Dismissable"
 
 ## Usage
 
-Conform `DismissTriggerUsable` where present modal ViewController
+Conform `DismissTriggerUsable` where present modal ViewController and add `DismissInteractor`, `dismissAnimator` in ViewController
 ```swift
 class ViewController: UIViewController, DismissTriggerUsable
+    var dismissInteractor: DismissInteractor = DismissInteractor()
+    var dismissAnimator: DismissAnimator = DismissAnimator()
 ```
 Conform `DismissableUsable` in modal ViewController
 ```swift
