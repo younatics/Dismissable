@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Dismissable'
   s.version          = '1.1.1'
-  s.summary          = 'Magical way to pull to dismiss youe view!'
+  s.summary          = 'Magical way to pull to dismiss your modal view!'
 
   s.description      = <<-DESC
                         Magic will be happened when you use Dismissable!
