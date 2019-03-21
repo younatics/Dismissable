@@ -32,9 +32,10 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        var vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
-        self.present(vc, animated: true, completion: nil)
-        vc.setup(self, scrollView: vc.tableView)
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
+        var navi = BaseNavigationController(rootViewController: vc)
+        navi.setup(self)
+        self.present(navi, animated: true , completion: nil)
     }
 }
 

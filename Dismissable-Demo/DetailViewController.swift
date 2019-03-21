@@ -9,13 +9,14 @@
 import UIKit
 import Dismissable
 
-class DetailViewController: UIViewController, DismissableUsable {
+class DetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
+        self.tableView.delegate = self
     }
     
     @IBAction func closeButtonClicked(_ sender: UIButton) {
@@ -44,5 +45,12 @@ extension DetailViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "third")
             return cell!
         }
+    }
+}
+
+extension DetailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

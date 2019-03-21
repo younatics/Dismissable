@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19165B902243FA05006D7FC9 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19165B8F2243FA05006D7FC9 /* BaseNavigationController.swift */; };
 		199953B5220AF1A900A59D3B /* Dismissable.h in Headers */ = {isa = PBXBuildFile; fileRef = 199953B3220AF1A900A59D3B /* Dismissable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19E47C88220AF2000025DBC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47C87220AF2000025DBC0 /* AppDelegate.swift */; };
 		19E47C8A220AF2000025DBC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E47C89220AF2000025DBC0 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19165B8F2243FA05006D7FC9 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		199953B0220AF1A900A59D3B /* Dismissable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dismissable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		199953B3220AF1A900A59D3B /* Dismissable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dismissable.h; sourceTree = "<group>"; };
 		199953B4220AF1A900A59D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				19E47C89220AF2000025DBC0 /* ViewController.swift */,
 				19E47C97220AF2370025DBC0 /* DetailViewController.swift */,
+				19165B8F2243FA05006D7FC9 /* BaseNavigationController.swift */,
 				19E47C8B220AF2000025DBC0 /* Main.storyboard */,
 				19E47C87220AF2000025DBC0 /* AppDelegate.swift */,
 				19E47C8E220AF2010025DBC0 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19165B902243FA05006D7FC9 /* BaseNavigationController.swift in Sources */,
 				19E47C9B220AF2370025DBC0 /* DetailViewController.swift in Sources */,
 				19E47C8A220AF2000025DBC0 /* ViewController.swift in Sources */,
 				19E47C88220AF2000025DBC0 /* AppDelegate.swift in Sources */,

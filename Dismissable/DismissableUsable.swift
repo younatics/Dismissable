@@ -19,29 +19,27 @@ public extension DismissableUsable {
 }
 
 public extension DismissableUsable where Self: UIViewController {
-    mutating func setup(_ dismissableVC: DismissTriggerViewController, scrollView: UIScrollView? = nil) {
+    mutating func setup(_ dismissableVC: DismissTriggerViewController) {
         let dismissTriggerTransitioning = DismissTriggerTransitioningDelegate(rootViewController: dismissableVC)
         self.transitioningDelegate = dismissTriggerTransitioning
         self.dismissableTriggerTransitioning = dismissTriggerTransitioning
         self.dismissableInteractor = dismissableVC.dismissInteractor
-        self.eventDispatcher = DismissableUsableEventDispatcher(rootViewController: self, scrollView: scrollView)
+        self.eventDispatcher = DismissableUsableEventDispatcher(rootViewController: self)
     }
 }
 
 final class DismissableUsableEventDispatcher: NSObject {
     private weak var rootViewController: DismissableViewController?
-    private weak var scrollView: UIScrollView?
     private lazy var panGesture: UIPanGestureRecognizer = {
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(onPanGesture(_:)))
         gesture.delegate = self
         return gesture
     }()
 
-    init(rootViewController: DismissableViewController, scrollView: UIScrollView? = nil) {
+    init(rootViewController: DismissableViewController) {
         super.init()
         
         self.rootViewController = rootViewController
-        self.scrollView = scrollView
         rootViewController.view.addGestureRecognizer(self.panGesture)
     }
     
@@ -72,15 +70,33 @@ final class DismissableUsableEventDispatcher: NSObject {
             break
         }
     }
+    
+    var internalScrollView: UIScrollView?
+    
+    func scrollView(in view: UIView, location: CGPoint) {
+        for subview in view.subviews {
+            if let scrollView = view as? UIScrollView, view.frame.contains(location) {
+                internalScrollView = scrollView
+                break
+            } else {
+                _ = scrollView(in: subview, location: location)
+            }
+        }
+    }
 }
 
 extension DismissableUsableEventDispatcher: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        guard let contentOffsetY = scrollView?.contentOffset.y else { return true }
+        return true
+    }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        guard let view = rootViewController?.view else { return false }
+        self.scrollView(in: view, location: touch.location(in: rootViewController?.view))
+        guard let contentOffsetY = internalScrollView?.contentOffset.y else { return true }
         if contentOffsetY > CGFloat(20) {
             return false
         }
-        
         return true
     }
 }
