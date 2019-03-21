@@ -42,8 +42,10 @@ class DetailViewController: UIViewController, DismissableUsable
 Add `dismissable` when prsent modal view
 ```swift
 let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
-vc.setup(dismissable: (self, dismissInteractor))
 self.present(vc, animated: true, completion: nil)
+
+// Add optional scrollView argument when you need to prevent scroll event when offset is big
+vc.setup(self, scrollView: vc.tableView)
 ```
 
 Also you can customize dismiss animator
