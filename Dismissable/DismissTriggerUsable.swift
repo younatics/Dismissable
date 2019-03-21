@@ -22,7 +22,7 @@ public extension DismissTriggerUsable {
 
 final class DismissTriggerTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
     private weak var rootViewController: DismissTriggerViewController?
-    
+
     init(rootViewController: DismissTriggerViewController) {
         super.init()
         self.rootViewController = rootViewController
@@ -36,5 +36,4 @@ final class DismissTriggerTransitioningDelegate: NSObject, UIViewControllerTrans
         guard let dismissInteractor = rootViewController?.dismissInteractor else { return nil }
         return dismissInteractor.hasStarted ? dismissInteractor : nil
     }
-    
 }

@@ -10,8 +10,6 @@ import UIKit
 import Dismissable
 
 class ViewController: UIViewController, DismissTriggerUsable {
-    
-    // Custom Animator
     var dismissAnimator: DismissAnimator = {
         let animator = DismissAnimator()
         animator.transitionDuration = 0.35
@@ -35,8 +33,8 @@ extension ViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         var vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
-        vc.setup(dismissable: (self, dismissInteractor))
         self.present(vc, animated: true, completion: nil)
+        vc.setup(self, scrollView: vc.tableView)
     }
 }
 

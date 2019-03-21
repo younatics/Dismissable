@@ -107,10 +107,10 @@
 		199953B2220AF1A900A59D3B /* Dismissable */ = {
 			isa = PBXGroup;
 			children = (
-				19E47CA5220AF2F40025DBC0 /* DismissTriggerUsable.swift */,
-				19E47C9F220AF23F0025DBC0 /* DismissableUsable.swift */,
 				CE5B4098220D3EAA009C3066 /* UIViewController+Dismissable.swift */,
 				19E47CA0220AF23F0025DBC0 /* DismissAnimator.swift */,
+				19E47CA5220AF2F40025DBC0 /* DismissTriggerUsable.swift */,
+				19E47C9F220AF23F0025DBC0 /* DismissableUsable.swift */,
 				19E47CA3220AF2B90025DBC0 /* DismissInteractor.swift */,
 				199953B3220AF1A900A59D3B /* Dismissable.h */,
 				199953B4220AF1A900A59D3B /* Info.plist */,

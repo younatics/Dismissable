@@ -10,7 +10,6 @@ import UIKit
 import Dismissable
 
 class DetailViewController: UIViewController, DismissableUsable {
-    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -26,7 +25,7 @@ class DetailViewController: UIViewController, DismissableUsable {
 
 extension DetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,7 +41,8 @@ extension DetailViewController: UITableViewDataSource {
             return cell!
 
         default:
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: "third")
+            return cell!
         }
     }
 }

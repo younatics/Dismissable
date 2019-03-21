@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 extension UIViewController {
-    
     enum AssociatedKeys {
         static var eventDispatcher = "eventDispatcher"
         static var dismissableTriggerTransitioning = "dismissableTriggerTransitioning"
