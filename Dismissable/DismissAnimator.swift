@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class DismissAnimator : NSObject {
+@MainActor open class DismissAnimator : NSObject {
     public var transitionDuration: TimeInterval = 0.35
     public var dimmedViewStartColor: UIColor = UIColor.black.withAlphaComponent(0.4)
     public var dimmedViewEndColor: UIColor = UIColor.black.withAlphaComponent(0)

@@ -10,7 +10,7 @@ import UIKit
 
 public typealias DismissTriggerViewController = (UIViewController & DismissTriggerUsable)
 
-public protocol DismissTriggerUsable {
+@MainActor public protocol DismissTriggerUsable {
     var dismissInteractor: DismissInteractor { get }
     var dismissAnimator: DismissAnimator { get }
 }

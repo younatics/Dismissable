@@ -11,9 +11,12 @@ import UIKit
 
 extension UIViewController {
     enum AssociatedKeys {
-        static var eventDispatcher = "eventDispatcher"
-        static var dismissableTriggerTransitioning = "dismissableTriggerTransitioning"
-        static var dismissableInteractor = "dismissableInteractor"
+        // Stable unique addresses for objc associated-object keys. A `UInt8`
+        // gives a fixed address (unlike a `String`, whose internal buffer is not
+        // a stable pointer); never mutated, so unchecked isolation is safe.
+        nonisolated(unsafe) static var eventDispatcher: UInt8 = 0
+        nonisolated(unsafe) static var dismissableTriggerTransitioning: UInt8 = 0
+        nonisolated(unsafe) static var dismissableInteractor: UInt8 = 0
     }
     
     var eventDispatcher: DismissableUsableEventDispatcher? {

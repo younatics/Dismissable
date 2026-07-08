@@ -10,7 +10,7 @@ import UIKit
 
 public typealias DismissableViewController = (UIViewController & DismissableUsable)
 
-public protocol DismissableUsable {
+@MainActor public protocol DismissableUsable {
     var percentThreshold: CGFloat { get }
 }
 
@@ -28,7 +28,7 @@ public extension DismissableUsable where Self: UIViewController {
     }
 }
 
-final class DismissableUsableEventDispatcher: NSObject {
+@MainActor final class DismissableUsableEventDispatcher: NSObject {
     private weak var rootViewController: DismissableViewController?
     private lazy var panGesture: UIPanGestureRecognizer = {
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(onPanGesture(_:)))
@@ -79,7 +79,7 @@ final class DismissableUsableEventDispatcher: NSObject {
                 internalScrollView = scrollView
                 break
             } else {
-                _ = scrollView(in: subview, location: location)
+                scrollView(in: subview, location: location)
             }
         }
     }
