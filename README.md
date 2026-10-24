@@ -12,7 +12,7 @@
 
 ## Requirements
 
-`Dismissable` requires iOS 13.0 or later and Swift 6.0 with Swift tools version 6.0. Supports Swift Package Manager and CocoaPods.
+`Dismissable` requires iOS 15.0 or later and Swift 6.0 with Swift tools version 6.0. Supports Swift Package Manager and CocoaPods.
 
 ## Installation
 

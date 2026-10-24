@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Dismissable'
-  s.version          = '2.0.0'
+  s.version          = '2.1.0'
   s.summary          = 'Magical way to pull to dismiss your modal view! (Swift 6)'
 
   s.description      = <<-DESC
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source_files     = 'Dismissable/*.swift'
 
   s.swift_version = '6.0'
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
   s.frameworks = 'UIKit'
   s.requires_arc = true
 end

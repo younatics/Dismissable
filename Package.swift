@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Dismissable",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         .library(name: "Dismissable", targets: ["Dismissable"])
